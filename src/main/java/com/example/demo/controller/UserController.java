@@ -27,7 +27,7 @@ public class UserController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "welcome to springboot!!!!!";
+		return "welcome to springboot.";
 	}
 
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
