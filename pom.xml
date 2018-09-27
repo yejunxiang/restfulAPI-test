@@ -36,15 +36,35 @@
 			<scope>test</scope>
 		</dependency>
 		
+		<!-- jpa相关包 -->
 		<dependency>
 	       <groupId>org.springframework.boot</groupId>
 	       <artifactId>spring-boot-starter-data-jpa</artifactId>
  		</dependency>
  		
+ 		<!-- 数据库连接jar包 -->
  		<dependency>
  			<groupId>mysql</groupId>
  			<artifactId>mysql-connector-java</artifactId>
  		</dependency>
+ 		
+ 		<!-- view层-html -->
+ 		<dependency>
+ 			<groupId>org.springframework.boot</groupId>
+          	<artifactId>spring-boot-starter-thymeleaf</artifactId>
+ 		</dependency>
+ 		
+ 		<!-- swagger2接口文档相关jar包 -->
+ 		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.2.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>

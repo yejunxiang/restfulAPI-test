@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"/>
+    <title>Insert title here</title>
+    <style type="text/css">
+        span {
+            color: #999999;
+            line-height:1.5;
+        }
+
+        span.text {
+            font-size: 24px;
+        }
+
+        span.title {
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+<br />
+<div>
+	<span style="color:#666666;">会员等级介绍</span><br />
+</div>
+<span style="color:#666666;">&nbsp;&nbsp;&nbsp;&nbsp;会员等级是基于用户一定时期内使用ZFC业务累计消费金额所决定，用户达到相应的等级门槛即可升级。用户可通过消费购物来累计金额，从而提升等级。</span><br />
+<div>
+	<span style="color:#666666;">等级有效期</span><br />
+</div>
+<span style="color:#666666;">1、会员等级有效期为 1年，若用户升级，新等级有效期 从升级当天开始重新计算。一满足条件，用户自动升级；</span><br />
+<span style="color:#666666;"> 2、若用户没有在有效期内升级，等级有效期当天会计算新的等级，变更时间在0点-24点之间，由系统逐步批量处理。 变更的新等级，看用户消费的金额 在哪个区间，就变更该用户到那个等级；</span><br />
+<span style="color:#666666;"> 3、一到等级有效期，统计的金额清零，重新统计新的一年的累计金额；</span><br/>
+<div>
+	<span style="color:#666666;">升级规则</span><br />
+</div>
+<span style="color:#666666;">用户在等级有效期内等级消费金额达到升级门槛，新的等级立即生效。等级到期后，用户等级将根据上个有效期内等级金额重新计算。</span><br />
+<span style="color:#666666;">若跨等级有效期变更的交易出现退款，等级消费金额会在新等级有效期的等级金额找那个扣除（因在等级有效期钱获取的等级金额是计入了上个等级有效期的等级金额中影响用户升降级）。</span><br />
+<div>
+	<span style="color:#666666;">会员等级对照表</span><br />
+</div>
+<span style="color:#666666;">用户等级累计金额达到对应升级门槛，则立即升级。有效期结束后，用户的等级将根据上个有效期内已累计消费金额重新计算等级。</span><br />
+</body>
+</html>
